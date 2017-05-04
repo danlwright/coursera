@@ -38,7 +38,15 @@ p {
   height: auto;
   border: 1px solid #A3A3A3;
   float: right;
-
+}
+#chicken {
+  background-color: #E7E086;
+}
+#beef {
+  background-color: #86E8FF;
+}
+#sushi {
+  background-color: #FD7D09;
 }
 /* Simple Responsive Framework. */
 .row {
