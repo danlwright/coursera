@@ -63,8 +63,11 @@ p {
 /* Simple Responsive Framework. */
 
 .row {
-    width: 100%;
-}
+    width: -webkit-calc(100% - 15px);
+    width:    -moz-calc(100% - 15px);
+    width:         calc(100% - 15px);
+    margin:0 auto;
+   }
 
 
 /********** Large devices only **********/
