@@ -5,21 +5,25 @@
 h1 {
   margin-bottom: 15px;
   text-align: center;
-  font-family: Helvetica;
+  font-family: Garamond;
   color: #484848;
+  font-style: italic;
+  font-size: 42pt;
 }
 h2 {
   padding: 10px 0px 10px 0px;
   text-align: center;
-  font-family: Helvetica;
+  font-family: Garamond;
   color: #484848;
   margin: 0px;
+  color: #484848;
+  font-style: italic;
  }
 p {
   width: 90%;
   margin-right: auto;
   margin-left: auto;
-  font-family: Helvetica;
+  font-family: Arial, Helvetica, sans-serif;
   color: #484848;
   clear:right;
   }
@@ -33,20 +37,20 @@ p {
 }
 
 .right {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   width: 200px;
   height: auto;
   border: 1px solid #A3A3A3;
   float: right;
 }
 #chicken {
-  background-color: #E7E086;
+  background-color: #FFF2B6;
 }
 #beef {
-  background-color: #86E8FF;
+  background-color: #FFD0F7;
 }
 #sushi {
-  background-color: #FD7D09;
+  background-color: #92CCC9;
 }
 /* Simple Responsive Framework. */
 .row {
