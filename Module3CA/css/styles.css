@@ -37,7 +37,7 @@ p {
 }
 
 #nav-list a:hover {
-  background: #BBB;
+    background: #BBB;
 }
 
 #collapsable-nav a {
@@ -47,22 +47,24 @@ p {
     color: #484848;
     font-style: italic;
     font-size: 150%;
-    
 }
+
 #menu1 {
     border: 1px solid #A3A3A3;
 }
+
 #menu2 {
     border-left: 1px solid #A3A3A3;
     border-right: 1px solid #A3A3A3;
 }
+
 #menu3 {
     border: 1px solid #A3A3A3;
 }
 
 .row {
     width: -webkit-calc(100% - 30px);
-    width:    -moz-calc(100% - 30px);
-    width:         calc(100% - 30px);
-    margin:0 auto;
-   }
+    width: -moz-calc(100% - 30px);
+    width: calc(100% - 30px);
+    margin: 0 auto;
+}
