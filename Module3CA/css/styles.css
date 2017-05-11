@@ -10,6 +10,11 @@ h1 {
     font-size: 175%;
 }
 
+.navbar-brand {
+    font-family: Garamond;
+    font-size: 175%;
+}
+
 h2 {
     padding: 10px 0px 15px 0px;
     text-align: center;
