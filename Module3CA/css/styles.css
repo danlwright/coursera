@@ -31,6 +31,7 @@ p {
     font-family: Arial, Helvetica, sans-serif;
     color: #484848;
     clear: right;
+    margin-bottom: 15px;
 }
 
 .gridcontent {
@@ -65,6 +66,15 @@ p {
 
 #menu3 {
     border: 1px solid #A3A3A3;
+}
+
+#backtotop {
+   text-align: right;
+   margin: 15px;
+}
+
+#backtotop:hover {
+    font-size: 125%;
 }
 
 .row {
