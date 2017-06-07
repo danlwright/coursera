@@ -12,10 +12,10 @@
         $scope.sayMessage = function() {
             var menuItemsString = $scope.menuItems.split(',');
             var menuItemsLength = menuItemsString.length;
-            if (menuItemsLength < 4 && menuItemsLength != 1) {
+            if (menuItemsLength < 4 && menuItemsLength != 0) {
                 $scope.response = "Enjoy!";
             }
-            else if (menuItemsLength == 1) {
+            else if (menuItemsLength == 0) {
                 $scope.response = "Please enter data first";
             } else {
                 $scope.response = "Too Much!";
