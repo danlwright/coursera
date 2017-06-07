@@ -16,7 +16,7 @@
                 $scope.response = "Enjoy!";
             }
             else if (menuItemsLength == 0) {
-                "Please enter data first"
+                $scope.response = "Please enter data first";
             } else {
                 $scope.response = "Too Much!";
             }
