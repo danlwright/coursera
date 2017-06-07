@@ -15,7 +15,7 @@
             if (menuItemsLength < 4 && menuItemsLength != 0) {
                 $scope.response = "Enjoy!";
             }
-            else if (menuItemsLength == 0) {
+            else if (menuItemsString == "") {
                 $scope.response = "Please enter data first";
             } else {
                 $scope.response = "Too Much!";
