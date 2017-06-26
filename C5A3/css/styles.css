@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 30px 0px 30px 0px;
+    font-family: Garamond;
+    color: #484848;
+    font-style: italic;
+    font-size: 175%;
+}
+
+.navbar-brand {
+    font-family: Garamond;
+    font-size: 175%;
+
+}
+
+h2 {
+    padding: 10px 0px 15px 0px;
+    text-align: center;
+    font-family: Garamond;
+    color: #484848;
+    margin: 0px;
+    font-style: italic;
+    font-size: 150%;
+}
+
+p {
+    margin-right: auto;
+    margin-left: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #484848;
+    clear: right;
+    margin-bottom: 15px;
+}
+
+.gridcontent {
+    margin-bottom: 30px;
+    border: 1px solid #A3A3A3;
+    background-color: #F0F0F0;
+    padding: 15px;
+    position: relative;
+}
+
+#nav-list a:hover {
+    background: #BBB;
+}
+
+#collapsable-nav a {
+    background-color: #EDEDED;
+    font-family: Garamond;
+    text-align: center;
+    color: #484848;
+    font-style: italic;
+    font-size: 150%;
+    margin: 8px;
+}
+
+#menu1, #menu2, #menu3 {
+    border: 1px solid #A3A3A3;
+}
+
+
+#backtotop {
+   text-align: right;
+   margin: 15px;
+}
+
+#backtotop:hover {
+    font-size: 125%;
+}
+
+.row {
+    width: -webkit-calc(100% - 30px);
+    width: -moz-calc(100% - 30px);
+    width: calc(100% - 30px);
+    margin: 0 auto;
+}
