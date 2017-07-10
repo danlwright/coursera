@@ -60,7 +60,7 @@
         controller.removeItem = function(itemIndex) {
             controller.foundItems.splice(itemIndex, 1);
             if (!controller.foundItems.length) {
-                controller.message = "No items found";
+                controller.message = "No Items Found";
             } else {
                 controller.message = false;
             }
