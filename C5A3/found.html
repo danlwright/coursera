@@ -1,0 +1,17 @@
+<h3 ng-if="controller.found.length">Selected Items</h3>
+<div class="row" ng-repeat="item in controller.found">
+  <div class="panel panel-default">
+    <div class="panel-heading">{{ item.name }}</div>
+    <div class="panel-body">
+       <table>
+          <tr>
+            <td><strong>{{ item.short_name }} :</strong></td>
+            <td>&nbsp</td>
+            <td><i>{{ item.description }}</i></td>
+            <td>&nbsp</td>
+            <td><button class="btn btn-warning" ng-click="controller.onRemove({index: $index});">Don't want this one</button></td>
+          </tr>
+       </table>
+    </div>
+  </div>
+</div>
