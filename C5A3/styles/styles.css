@@ -8,8 +8,7 @@ input[type="text"] {
 .narrow-button {
   float: left;
   margin-left: 10px;
-  margin-bottom: 25px;
-  /*clear:right;*/
+
 }
 .loader {
   display: none;
