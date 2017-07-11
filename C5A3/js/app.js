@@ -77,7 +77,7 @@
                 method: 'GET',
                 url: (ApiBasePath + '/menu_items.json')
             });
-            response.toLowerCase();
+            response = response.toLowerCase();
             return response;
 
         };
