@@ -19,7 +19,7 @@
         </div>
         <div>
             <!-- found-items should be implemented as a component -->
-            <found-items found="controller.foundItems" on-remove="controller.removeItem(index)"></found-items>
+            <found-items found="controller.found" on-remove="controller.removeItem(index)"></found-items>
         </div>
         <div class="alert alert-danger" ng-if="controller.message">
             <strong>{{controller.message}}</strong>
