@@ -43,7 +43,7 @@
                         var foundArray = [];
                         var found = response.data.menu_items;
                         for (var i = 0; i < found.length; i++) {
-                            if ((((found)[i]).description).indexOf(term) === -1 || (((found)[i]).description) === '') {
+                            if (((found[i]).description.toLowerCase).indexOf(term) === -1 || ((found[i]).description.toLowerCase) === '') {
                                 found.splice(i, 1);
                             } else {
                                 foundArray.push(found[i]);
