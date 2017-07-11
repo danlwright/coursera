@@ -39,9 +39,9 @@
             } else {
                 controller.message = false;
                 var promise = MenuSearchService.getMatchedMenuItems();
-                promise.then(function(response) {
+                promise.then(function(foundItems) {
                         var foundArray = [];
-                        var found = response.data.menu_items;
+                        var found = foundItems.data.menu_items;
                         for (var i = 0; i < found.length; i++) {
                             if (((found[i]).description).indexOf(term) === -1 || ((found[i]).description) === '') {
                                 found.splice(i, 1);
