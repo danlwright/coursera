@@ -77,24 +77,8 @@
                 method: 'GET',
                 url: (ApiBasePath + '/menu_items.json')
             });
-            return response
-            .then(function(result) {
-                    var items = result.data.menu_items;
-                    var foundItems = [];
-
-                    if (!searchTerm)
-                        return foundItems;
-
-                    for (var i = 0; i < items.length; i++) {
-                        if (items[i].description.toLowerCase().indexOf(searchTerm) !== -1) {
-                            foundItems.push(items[i]);
-                        }
-                    }
-                    return foundItems;
-                })
-                .catch(function(error) {
-                    return error.data;
-                });
+            response.toLowerCase()
+            return response;
 
         };
 
