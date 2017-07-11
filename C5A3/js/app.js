@@ -68,21 +68,52 @@
 
     }
 
-    MenuSearchService.inject = ['$http', 'ApiBasePath']
+MenuSearchService.$inject = ['$http', 'ApiBasePath'];
+function MenuSearchService($http, ApiBasePath) {
+    var service = this;
 
-    function MenuSearchService($http, ApiBasePath) {
-        var service = this;
-        service.getMatchedMenuItems = function() {
-            var response = $http({
-                method: 'GET',
-                url: (ApiBasePath + '/menu_items.json')
-            });
-            response = response.toLowerCase();
-            return response;
+    service.getMatchedMenuItems = function(searchTerm) {
+        return $http({
+            method: 'GET',
+            url: ( ApiBasePath + '/menu_items.json')
+        })
+        .then(function(result) {
+            var items = result.data.menu_items;
+            var foundItems = [];
 
-        };
+            if (!searchTerm)
+                return foundItems;
+
+            for (var i=0; i < items.length; i++)
+            {
+                if (items[i].description.toLowerCase().indexOf(searchTerm) !== -1)
+                {
+                    foundItems.push(items[i]);
+                }
+            }
+            return foundItems;
+        })
+        .catch(function(error) {
+            return error.data;
+        });
+    };
+}
+
+    // MenuSearchService.inject = ['$http', 'ApiBasePath']
+
+    // function MenuSearchService($http, ApiBasePath) {
+    //     var service = this;
+    //     service.getMatchedMenuItems = function() {
+    //         var response = $http({
+    //             method: 'GET',
+    //             url: (ApiBasePath + '/menu_items.json')
+    //         });
+    //         response = response.toLowerCase();
+    //         return response;
+
+    //     };
 
 
-    }
+    // }
 
 })();
