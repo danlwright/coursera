@@ -43,7 +43,7 @@
                         var foundArray = [];
                         var found = response.data.menu_items;
                         for (var i = 0; i < found.length; i++) {
-                            if (((found[i]).description.toLowerCase).indexOf(term) === -1 || ((found[i]).description.toLowerCase) === '') {
+                            if (((found[i]).description).indexOf(term) === -1 || ((found[i]).description) === '') {
                                 found.splice(i, 1);
                             } else {
                                 foundArray.push(found[i]);
@@ -78,6 +78,23 @@
                 url: (ApiBasePath + '/menu_items.json')
             });
             return response;
+            .then(function(result) {
+                    var items = result.data.menu_items;
+                    var foundItems = [];
+
+                    if (!searchTerm)
+                        return foundItems;
+
+                    for (var i = 0; i < items.length; i++) {
+                        if (items[i].description.toLowerCase().indexOf(searchTerm) !== -1) {
+                            foundItems.push(items[i]);
+                        }
+                    }
+                    return foundItems;
+                })
+                .catch(function(error) {
+                    return error.data;
+                });
 
         };
 
