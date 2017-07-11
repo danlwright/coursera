@@ -20,7 +20,8 @@
 
         <div>
             <!-- found-items should be implemented as a component -->
-            <div class="col" ng-if="controller.found.length == 0">Nothing Found</div>
+
+            <div class="row" ng-if="controller.found.length == 0">Nothing Found</div>
             <found-items items="controller.found" on-remove="controller.removeItem(index)"></found-items>
         </div>
         <script src="js/angular.js"></script>
