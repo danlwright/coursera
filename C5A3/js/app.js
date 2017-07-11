@@ -14,7 +14,7 @@
                 found: '=',
                 onRemove: '&'
             },
-            controller: FoundItemsDirectiveController,
+            controller: foundItemsDirectiveController,
             controllerAs: 'controller',
             bindToController: true
         };
