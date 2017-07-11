@@ -52,4 +52,7 @@ input[type="text"] {
   }
 }
 
+.row {
+  float: left;
+}
 
