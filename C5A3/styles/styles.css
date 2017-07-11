@@ -51,12 +51,4 @@ input[type="text"] {
     transform: rotate(360deg);
   }
 }
- #floatdir {
-  float: left;
-  clear: both;
-  margin: 25px;
- }
 
-.form-group {
-  margin: auto;
-}
