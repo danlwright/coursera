@@ -77,7 +77,7 @@
                 method: 'GET',
                 url: (ApiBasePath + '/menu_items.json')
             });
-            return response;
+            return response
             .then(function(result) {
                     var items = result.data.menu_items;
                     var foundItems = [];
