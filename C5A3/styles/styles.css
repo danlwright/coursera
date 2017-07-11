@@ -51,5 +51,8 @@ input[type="text"] {
     transform: rotate(360deg);
   }
 }
-
+ #floatdir {
+  float: left;
+  clear: both;
+ }
 
