@@ -5,16 +5,16 @@
         .controller('NarrowItDownController', NarrowItDownController)
         .service('MenuSearchService', MenuSearchService)
         .constant('ApiBasePath', "https://davids-restaurant.herokuapp.com")
-        .directive('foundItems', foundItemsDirective);
+        .directive('foundItems', FoundItemsDirective);
 
-    function foundItemsDirective() {
+    function FoundItemsDirective() {
         var ddo = {
             templateUrl: 'found.html',
             scope: {
-                items: '=',
+                items: '<',
                 onRemove: '&'
             },
-            controller: foundItemsDirectiveController,
+            controller: FoundItemsDirectiveController,
             controllerAs: 'controller',
             bindToController: true
         }
@@ -22,7 +22,7 @@
         return ddo;
     }
 
-    function foundItemsDirectiveController() {
+    function FoundItemsDirectiveController() {
         var controller = this;
     }
 
