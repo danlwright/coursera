@@ -11,13 +11,13 @@
         var ddo = {
             templateUrl: 'found.html',
             scope: {
-                found: '=',
+                items: '=',
                 onRemove: '&'
             },
             controller: foundItemsDirectiveController,
             controllerAs: 'controller',
             bindToController: true
-        };
+        }
 
         return ddo;
     }
