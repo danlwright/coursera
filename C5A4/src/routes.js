@@ -19,7 +19,7 @@
 
             .state('categories', {
                 url: '/categories',
-                templateUrl: 'src/categories.html',
+                templateUrl: 'src/categories/categories.html',
                 resolve: {
                     categoriesdata: ['MenuDataService', function(MenuDataService) {
                         return MenuDataService.getAllCategories();
@@ -30,7 +30,7 @@
 
             .state('items', {
                 url: '/items/{categoryShortName}',
-                templateUrl: 'src/items.html',
+                templateUrl: 'src/items/items.html',
                 resolve: {
                     categoryItems: ['MenuDataService', '$stateParams', function(MenuDataService, $stateParams) {
                         return MenuDataService.getItemsForCategory($stateParams.categoryShortName);
